@@ -23,7 +23,7 @@ class FunctionScoreTest {
             query = match_all { }
             functions = listOf(
                 term { "foo" to "bar" } to gaussDecayFunction("baz", 1.0, "1d"),
-                match_all { } to randomFunction(234L),
+                match_all { } to randomFunction().seed(234),
                 null to exponentialDecayFunction("qux", 2.3, "10km"))
 
             boost = 1.2f

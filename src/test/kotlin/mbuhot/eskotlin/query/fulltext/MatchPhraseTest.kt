@@ -28,6 +28,7 @@ class MatchPhraseTest {
                     "message" : {
                         "query" : "this is a test",
                         "slop":0,
+                        "zero_terms_query":"NONE",
                         "boost":1.0
                     }
                 }
@@ -50,6 +51,7 @@ class MatchPhraseTest {
                         "query" : "this is a test",
                         "analyzer" : "my_analyzer",
                         "slop":0,
+                        "zero_terms_query":"NONE",
                         "boost":1.0
                     }
                 }

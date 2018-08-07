@@ -65,7 +65,6 @@ class NestedTest {
                                 }
                             }
                         ],
-                        "disable_coord":false,
                         "adjust_pure_negative":true,
                         "boost":1.0
                     }

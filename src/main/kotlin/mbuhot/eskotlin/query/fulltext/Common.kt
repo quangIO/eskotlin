@@ -29,7 +29,6 @@ class CommonBlock {
             var low_freq_operator: String? = null,
             var analyzer: String? = null,
             var boost: Float? = null,
-            var disable_coord: Boolean? = null,
             var cutoff_frequency: Float? = null,
             val minimum_should_match: MinimumShouldMatchData = MinimumShouldMatchData()) {
 
@@ -52,7 +51,6 @@ fun common(init: CommonBlock.() -> CommonBlock.CommonData): CommonTermsQueryBuil
         params.low_freq_operator?.let { lowFreqOperator(Operator.fromString(it)) }
         params.analyzer?.let { analyzer(it) }
         params.boost?.let { boost(it) }
-        params.disable_coord?.let { disableCoord(it) }
         params.cutoff_frequency?.let { cutoffFrequency(it) }
         params.minimum_should_match.low_freq?.toString()?.let { lowFreqMinimumShouldMatch(it) }
         params.minimum_should_match.high_freq?.toString()?.let { highFreqMinimumShouldMatch(it) }

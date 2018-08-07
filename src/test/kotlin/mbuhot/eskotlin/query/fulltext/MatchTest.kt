@@ -151,6 +151,7 @@ class MatchTest {
                         "fuzzy_transpositions": true,
                         "lenient": false,
                         "zero_terms_query": "NONE",
+                        "auto_generate_synonyms_phrase_query":true,
                         "boost": 1.0
                     }
                 }

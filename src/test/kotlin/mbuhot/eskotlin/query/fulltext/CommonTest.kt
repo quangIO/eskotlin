@@ -23,7 +23,6 @@ class CommonTest {
             "common": {
                 "body": {
                     "query": "this is bonsai cool",
-                    "disable_coord": true,
                     "high_freq_operator": "OR",
                     "low_freq_operator": "OR",
                     "cutoff_frequency": 0.001,
@@ -49,7 +48,6 @@ class CommonTest {
                 "common": {
                     "body": {
                         "query": "nelly the elephant as a cartoon",
-                        "disable_coord": true,
                         "high_freq_operator": "OR",
                         "low_freq_operator": "AND",
                         "cutoff_frequency": 0.001,
@@ -74,7 +72,6 @@ class CommonTest {
                 "common": {
                     "body": {
                         "query": "nelly the elephant as a cartoon",
-                        "disable_coord": true,
                         "high_freq_operator": "OR",
                         "low_freq_operator": "OR",
                         "cutoff_frequency": 0.001,
@@ -106,7 +103,6 @@ class CommonTest {
                 "common": {
                     "body": {
                         "query": "nelly the elephant not as a cartoon",
-                        "disable_coord": true,
                         "high_freq_operator": "OR",
                         "low_freq_operator": "OR",
                         "cutoff_frequency": 0.001,
